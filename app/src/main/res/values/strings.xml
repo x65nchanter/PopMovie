@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">PopMovie</string>
+    <string name="is_offline">Is offline</string>
+    <string name="unexpected_error">An unexpected error occurred</string>
+</resources>
