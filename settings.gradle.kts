@@ -34,6 +34,5 @@ dependencyResolutionManagement {
 }
 
 rootProject.name = "PopMovie"
-
 include(":app")
 include(":core")

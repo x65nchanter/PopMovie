@@ -1,4 +1,4 @@
-package com.example.popmovie.framework.services.response
+package com.example.popmovie.popular.framework.response
 
 data class MoviePage(
     val page: Int,

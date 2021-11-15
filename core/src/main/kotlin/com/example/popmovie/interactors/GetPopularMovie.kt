@@ -4,5 +4,7 @@ import com.example.popmovie.data.MovieRepository
 import com.example.popmovie.domain.Movie
 import kotlinx.coroutines.flow.Flow
 
-fun MovieRepository.getPopularMovie(nextPage: Flow<Unit>): Flow<List<Movie>> =
-    popularMovie(nextPage)
+class GetPopularMovie(private val movieRepository: MovieRepository) {
+    fun execute(): Flow<Movie> =
+        movieRepository.popularMovie()
+}

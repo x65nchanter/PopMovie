@@ -17,7 +17,7 @@ sealed class Poster {
     }
 
     enum class Size(val path: URI) {
-        ORIGINAL(URI.create("/t/p/original/")),
+        ORIGINAL(URI.create("./original/")),
     }
 
     companion object

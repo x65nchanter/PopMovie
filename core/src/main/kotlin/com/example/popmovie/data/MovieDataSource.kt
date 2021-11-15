@@ -4,7 +4,7 @@ import com.example.popmovie.domain.Movie
 import kotlinx.coroutines.flow.Flow
 
 interface MovieDataSource {
-    fun allByGroup(group: MovieGroup, nextPage: Flow<Unit>): Flow<List<Movie>>
+    fun allByGroup(group: MovieGroup): Flow<Movie>
     enum class MovieGroup {
         POPULAR
     }

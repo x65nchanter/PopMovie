@@ -1,11 +1,11 @@
-package com.example.popmovie.framework.services
+package com.example.popmovie.popular.framework
 
-import com.example.popmovie.framework.services.response.GenreList
-import com.example.popmovie.framework.services.response.MoviePage
+import com.example.popmovie.popular.framework.response.GenreList
+import com.example.popmovie.popular.framework.response.MoviePage
 import retrofit2.http.GET
 import retrofit2.http.Query
 
-interface MovieService {
+interface TheMovieDataBaseApi {
     @GET("movie/popular")
     suspend fun popularMovie(
         @Query("page") page: Int,
